@@ -1,0 +1,88 @@
+openapi: 3.1.0
+info:
+  title: Quikr Developer Platform (QDP) App Public API
+  version: v1
+  description: 'Quikr Developer Platform (QDP) exposes India''s Quikr online classifieds to approved partner apps: discover ads by location or category, surface trending and live activity, reply to listings, and post/edit ads. The platform is in beta with invitation-only access (request via dvlpr-support@quikr.com). Authentication uses custom Quikr HMAC-SHA1 signed headers, not OAuth.'
+  contact:
+    name: Quikr Developer Support
+    email: dvlpr-support@quikr.com
+    url: https://developer.quikr.com
+  x-access: invitation-only-beta
+servers:
+- url: https://api.quikr.com
+  description: Quikr Developer Platform production API host (as documented)
+security:
+- quikrSignature: []
+tags:
+- name: Public
+paths:
+  /public/adsByLocation:
+    get:
+      operationId: getAdsByLocation
+      summary: Retrieve ads by geographic coordinates.
+      responses:
+        '200':
+          description: Ads matching the supplied location.
+      tags:
+      - Public
+  /public/adsByCategory:
+    get:
+      operationId: getAdsByCategory
+      summary: Fetch ads filtered by category and city.
+      responses:
+        '200':
+          description: Ads matching the supplied category and city.
+      tags:
+      - Public
+  /public/trending:
+    get:
+      operationId: getTrending
+      summary: Display trending items in a city.
+      responses:
+        '200':
+          description: Trending items.
+      tags:
+      - Public
+  /public/liveOnQuikr:
+    get:
+      operationId: getLiveOnQuikr
+      summary: Retrieve live platform activity metrics.
+      responses:
+        '200':
+          description: Live activity metrics.
+      tags:
+      - Public
+  /public/reply:
+    post:
+      operationId: replyToAd
+      summary: Enable buyer-to-seller communication on a listing.
+      responses:
+        '200':
+          description: Reply accepted.
+      tags:
+      - Public
+  /public/postAds:
+    post:
+      operationId: postAd
+      summary: Submit a new advertisement/listing.
+      responses:
+        '200':
+          description: Ad posted.
+      tags:
+      - Public
+  /public/editAds:
+    post:
+      operationId: editAd
+      summary: Modify an existing advertisement/listing.
+      responses:
+        '200':
+          description: Ad updated.
+      tags:
+      - Public
+components:
+  securitySchemes:
+    quikrSignature:
+      type: apiKey
+      in: header
+      name: X-Quikr-Signature-v2
+      description: 'Custom Quikr request signing. Each request carries three headers: X-Quikr-App-Id (application identifier), X-Quikr-Token-Id (daily access token from /app/auth/access_token), and X-Quikr-Signature-v2 (HMAC-SHA1 signature). QDP helper libraries for Java and PHP generate these headers.'
