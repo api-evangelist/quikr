@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of Quikr hosts
+summary: >-
+  Probed standard /.well-known/ discovery endpoints on Quikr hosts. None are
+  published (all 4xx). Absence is valid, expected data.
+probes:
+- host: quikr.com
+  path: /.well-known/security.txt
+  status: 403
+  file: null
+- host: developer.quikr.com
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: quikr.com
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: developer.quikr.com
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: quikr.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: quikr.com
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: quikr.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null

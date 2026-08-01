@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.quikr.com/index.php/documentation
+docs: https://developer.quikr.com/index.php/documentation
+name: Quikr Developer Platform Authentication
+summary: >-
+  Quikr uses a custom HMAC-SHA1 request-signing scheme (not OAuth 2.0). Every
+  request carries an application id, a daily access token, and a computed
+  signature across three request headers. Access is invitation-only beta.
+schemes:
+- id: quikr-signature-v2
+  type: apiKey
+  in: header
+  standard: custom-hmac
+  algorithm: HMAC-SHA1
+  headers:
+  - name: X-Quikr-App-Id
+    description: Application identifier issued to the approved partner app.
+  - name: X-Quikr-Token-Id
+    description: >-
+      Daily access token obtained via POST /app/auth/access_token; valid for one
+      day, then must be regenerated.
+  - name: X-Quikr-Signature-v2
+    description: HMAC-SHA1 signature of the request computed with the app secret.
+  token_endpoint: https://api.quikr.com/app/auth/access_token
+  token_lifetime: 1 day
+helper_libraries:
+- language: Java
+  name: QDP Java library
+  purpose: Generates the Quikr auth headers/signature.
+- language: PHP
+  name: QDP PHP library
+  purpose: Generates the Quikr auth headers/signature.
+access_model: invitation-only-beta (request via dvlpr-support@quikr.com)

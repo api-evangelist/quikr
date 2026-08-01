@@ -1,0 +1,41 @@
+# Quikr
+
+> Quikr is India's leading online classifieds platform ("India's no. 1 online
+> classifieds platform") for buying, selling, and renting across vehicles, real
+> estate, jobs, goods, and 300+ services. The Quikr Developer Platform (QDP)
+> exposes classifieds data and actions to approved partner apps via an
+> invitation-only beta API.
+
+## API
+
+- [Developer Platform](https://developer.quikr.com): QDP landing page; beta, invitation-only API access (request via dvlpr-support@quikr.com).
+- [API Documentation](https://developer.quikr.com/index.php/documentation): Endpoints, custom HMAC auth, and rate limits.
+- Base URL: https://api.quikr.com
+
+### Authentication
+Custom Quikr HMAC-SHA1 signed headers (not OAuth): X-Quikr-App-Id, X-Quikr-Token-Id (daily token from POST /app/auth/access_token), X-Quikr-Signature-v2. QDP helper libraries exist for Java and PHP.
+
+### Operations (as documented)
+- GET /public/adsByLocation — ads by geographic coordinates
+- GET /public/adsByCategory — ads by category and city
+- GET /public/trending — trending items in a city
+- GET /public/liveOnQuikr — live platform metrics
+- POST /public/reply — buyer-to-seller reply
+- POST /public/postAds — post a new ad
+- POST /public/editAds — edit an existing ad
+- POST /platform/v1/userAds — the authenticated user's ads
+
+### Conventions
+- JSON request/response (application/json)
+- Rate limits: 1000 req/min for GET, 10 req/min for POST
+- Image upload host: raven.kuikr.com/upload
+
+## Company
+- [Website](https://quikr.com)
+- [Blog](https://blog.quikr.com)
+- Related brands: CommonFloor, Hiree, IndiaProperty, Zefo
+- Backed by: Norwest Venture Partners
+
+## Notes
+- No public OpenAPI/Swagger specification is published; the OpenAPI in this repo is a faithful minimal capture of documented operations.
+- No /.well-known/ discovery endpoints are published.

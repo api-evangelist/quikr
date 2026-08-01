@@ -1,8 +1,28 @@
 aid: quikr
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quikr.png
 name: Quikr
-description: 'Quikr is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Quikr is India's leading online classifieds platform, describing itself as
+  "India's no. 1 online classifieds platform" for buying, selling, and renting
+  across vehicles, real estate, jobs, mobiles, electronics, furniture, and 300+
+  service categories, plus education, events, pets, and matrimonial listings.
+  Quikr operates a portfolio of brands including CommonFloor, Hiree,
+  IndiaProperty, and Zefo. The Quikr Developer Platform (QDP) exposes classifieds
+  data and actions to approved partner apps through an invitation-only beta API
+  at api.quikr.com, using custom HMAC-SHA1 signed request headers rather than
+  OAuth. Quikr is backed by Norwest Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/quikr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,72 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
-apis: []
+- Classifieds
+- Marketplace
+- Real Estate
+- Automotive
+- Jobs
+- Ecommerce
+- India
+- Developer Platform
+apis:
+- aid: quikr:quikr-app-api
+  name: Quikr App API
+  description: The App API from Quikr — 1 operation(s) for app.
+  humanURL: https://developer.quikr.com/index.php/documentation
+  baseURL: https://api.quikr.com
+  tags:
+  - App
+  properties:
+  - type: OpenAPI
+    url: openapi/quikr-app-api-openapi.yml
+  - type: Authentication
+    url: authentication/quikr-authentication.yml
+  - type: Conventions
+    url: conventions/quikr-conventions.yml
+  - type: Documentation
+    url: https://developer.quikr.com/index.php/documentation
+  - type: DeveloperPortal
+    url: https://developer.quikr.com
+- aid: quikr:quikr-platform-api
+  name: Quikr Platform API
+  description: The Platform API from Quikr — 1 operation(s) for platform.
+  humanURL: https://developer.quikr.com/index.php/documentation
+  baseURL: https://api.quikr.com
+  tags:
+  - Platform
+  properties:
+  - type: OpenAPI
+    url: openapi/quikr-platform-api-openapi.yml
+  - type: Authentication
+    url: authentication/quikr-authentication.yml
+  - type: Conventions
+    url: conventions/quikr-conventions.yml
+  - type: Documentation
+    url: https://developer.quikr.com/index.php/documentation
+  - type: DeveloperPortal
+    url: https://developer.quikr.com
+- aid: quikr:quikr-public-api
+  name: Quikr Public API
+  description: The Public API from Quikr — 7 operation(s) for public.
+  humanURL: https://developer.quikr.com/index.php/documentation
+  baseURL: https://api.quikr.com
+  tags:
+  - Public
+  properties:
+  - type: OpenAPI
+    url: openapi/quikr-public-api-openapi.yml
+  - type: Authentication
+    url: authentication/quikr-authentication.yml
+  - type: Conventions
+    url: conventions/quikr-conventions.yml
+  - type: Documentation
+    url: https://developer.quikr.com/index.php/documentation
+  - type: DeveloperPortal
+    url: https://developer.quikr.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +106,22 @@ maintainers:
 common:
 - type: Website
   url: https://quikr.com
+- type: DeveloperPortal
+  url: https://developer.quikr.com
+- type: Documentation
+  url: https://developer.quikr.com/index.php/documentation
+- type: Blog
+  url: https://blog.quikr.com
+- type: SDKs
+  url: packages/quikr-packages.yml
+- type: DomainSecurity
+  url: security/quikr-domain-security.yml
+- type: WellKnown
+  url: well-known/quikr-well-known.yml
+- type: LLMsTxt
+  url: llms/quikr-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

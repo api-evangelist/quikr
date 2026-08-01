@@ -1,0 +1,18 @@
+{
+  "provider": "quikr",
+  "sources": [
+    "quikr-app-api-openapi.yml",
+    "quikr-platform-api-openapi.yml",
+    "quikr-public-api-openapi.yml"
+  ],
+  "outputs": [
+    "quikr-app-api-openapi.yml",
+    "quikr-platform-api-openapi.yml",
+    "quikr-public-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

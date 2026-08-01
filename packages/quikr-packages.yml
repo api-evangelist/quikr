@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.quikr.com/index.php/documentation
+name: Quikr Developer Platform (QDP) Client Libraries
+summary: >-
+  First-party QDP helper libraries documented on the Quikr Developer Platform.
+  They generate the custom Quikr auth headers/signature. No public package
+  registry (npm/Maven/Packagist) listing was found; distribution is via the
+  developer platform under invitation-only beta access.
+packages:
+- name: QDP Java Library
+  language: Java
+  official: true
+  purpose: Generates Quikr auth headers and HMAC-SHA1 request signatures.
+  registry: none-found
+  source: https://developer.quikr.com/index.php/documentation
+- name: QDP PHP Library
+  language: PHP
+  official: true
+  purpose: Generates Quikr auth headers and HMAC-SHA1 request signatures.
+  registry: none-found
+  source: https://developer.quikr.com/index.php/documentation

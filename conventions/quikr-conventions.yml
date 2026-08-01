@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.quikr.com/index.php/documentation
+docs: https://developer.quikr.com/index.php/documentation
+name: Quikr Developer Platform API Conventions
+summary: >-
+  Cross-cutting request/response semantics for the Quikr Developer Platform (QDP)
+  as documented on the developer site.
+auth:
+  style: custom-hmac-signed-headers
+  detail: X-Quikr-App-Id + X-Quikr-Token-Id (daily) + X-Quikr-Signature-v2 (HMAC-SHA1)
+  see: ../authentication/quikr-authentication.yml
+content_type:
+  request: application/json
+  response: application/json
+  detail: All data is transmitted as JSON.
+versioning:
+  style: uri-path
+  detail: >-
+    Public discovery endpoints are unversioned under /public/*; platform
+    endpoints are versioned in the path (e.g. /platform/v1/userAds).
+rate_limits:
+  signaling: documented-quota
+  limits:
+  - scope: GET endpoints
+    limit: 1000 requests/minute
+  - scope: POST endpoints
+    limit: 10 requests/minute
+media_upload:
+  endpoint: http://raven.kuikr.com/upload
+  detail: Separate image-upload host documented for listing images.
+error_envelope:
+  format: unknown
+  detail: No structured error/problem+json format is documented publicly.
+helper_libraries:
+  languages: [Java, PHP]
+  detail: QDP libraries simplify auth header/signature generation.
