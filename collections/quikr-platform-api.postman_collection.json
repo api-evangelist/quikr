@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "230d6362-63a8-448b-b661-ea80745072da",
+      "name": "Platform",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9a30f820-1f08-4476-a066-eb429a51f9a0",
+          "name": "Retrieve the authenticated user's posted ads.",
+          "request": {
+            "name": "Retrieve the authenticated user's posted ads.",
+            "description": {},
+            "url": {
+              "path": [
+                "platform",
+                "v1",
+                "userAds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "68d5f81c-fdfa-4d9d-a929-95edd7d2e9ad",
+              "name": "The user's ads.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "platform",
+                    "v1",
+                    "userAds"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.quikr.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Quikr-Signature-v2"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5a1664ca-545b-493e-b537-1bb5b9606a6c",
+    "name": "Quikr Developer (QDP) App Platform API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Quikr Developer Platform (QDP) exposes India's Quikr online classifieds to approved partner apps: discover ads by location or category, surface trending and live activity, reply to listings, and post/edit ads. The platform is in beta with invitation-only access (request via dvlpr-support@quikr.com). Authentication uses custom Quikr HMAC-SHA1 signed headers, not OAuth.\n\nContact Support:\n Name: Quikr Developer Support\n Email: dvlpr-support@quikr.com",
+      "type": "text/plain"
+    }
+  }
+}

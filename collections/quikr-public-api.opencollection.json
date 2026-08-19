@@ -1,0 +1,103 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Quikr Developer Platform (QDP) App Public API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Quikr-Signature-v2",
+      "value": "{{X-Quikr-Signature-v2}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Public",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve ads by geographic coordinates.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.quikr.com/public/adsByLocation"
+          },
+          "docs": "Retrieve ads by geographic coordinates."
+        },
+        {
+          "info": {
+            "name": "Fetch ads filtered by category and city.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.quikr.com/public/adsByCategory"
+          },
+          "docs": "Fetch ads filtered by category and city."
+        },
+        {
+          "info": {
+            "name": "Display trending items in a city.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.quikr.com/public/trending"
+          },
+          "docs": "Display trending items in a city."
+        },
+        {
+          "info": {
+            "name": "Retrieve live platform activity metrics.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.quikr.com/public/liveOnQuikr"
+          },
+          "docs": "Retrieve live platform activity metrics."
+        },
+        {
+          "info": {
+            "name": "Enable buyer-to-seller communication on a listing.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.quikr.com/public/reply"
+          },
+          "docs": "Enable buyer-to-seller communication on a listing."
+        },
+        {
+          "info": {
+            "name": "Submit a new advertisement/listing.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.quikr.com/public/postAds"
+          },
+          "docs": "Submit a new advertisement/listing."
+        },
+        {
+          "info": {
+            "name": "Modify an existing advertisement/listing.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.quikr.com/public/editAds"
+          },
+          "docs": "Modify an existing advertisement/listing."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

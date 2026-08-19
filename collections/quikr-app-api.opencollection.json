@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Quikr Developer Platform (QDP) App API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Quikr-Signature-v2",
+      "value": "{{X-Quikr-Signature-v2}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "App",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate a daily access token (X-Quikr-Token-Id), valid for one day.",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.quikr.com/app/auth/access_token"
+          },
+          "docs": "Generate a daily access token (X-Quikr-Token-Id), valid for one day."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

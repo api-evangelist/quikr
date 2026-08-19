@@ -1,0 +1,518 @@
+{
+  "item": [
+    {
+      "id": "d51ec91c-cf6e-40dc-a497-2626c401198d",
+      "name": "Public",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3ca99545-baec-48e2-ab2f-ad102b7751b2",
+          "name": "Retrieve ads by geographic coordinates.",
+          "request": {
+            "name": "Retrieve ads by geographic coordinates.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "adsByLocation"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "39eb34dc-bc93-4ee2-8e9b-290b487b0a59",
+              "name": "Ads matching the supplied location.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "adsByLocation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a125d9db-b953-4456-99c5-9d122d54cffe",
+          "name": "Fetch ads filtered by category and city.",
+          "request": {
+            "name": "Fetch ads filtered by category and city.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "adsByCategory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "91d9ae0d-27bc-4947-acce-6786d3cea509",
+              "name": "Ads matching the supplied category and city.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "adsByCategory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8dd237ed-1a94-442d-a628-11d4c74177d0",
+          "name": "Display trending items in a city.",
+          "request": {
+            "name": "Display trending items in a city.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "trending"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dfece8c6-68c8-4787-874e-aabce5bb46d6",
+              "name": "Trending items.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "trending"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5b8c19b4-c83c-4c37-9915-dc79def84379",
+          "name": "Retrieve live platform activity metrics.",
+          "request": {
+            "name": "Retrieve live platform activity metrics.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "liveOnQuikr"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "25d388b9-9efd-4380-ac63-ed1889738208",
+              "name": "Live activity metrics.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "liveOnQuikr"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7d9df84c-d4a7-4b00-bf1c-21b8a5137582",
+          "name": "Enable buyer-to-seller communication on a listing.",
+          "request": {
+            "name": "Enable buyer-to-seller communication on a listing.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "reply"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "02aafa98-9cbe-471f-8ea4-7c92cc45babf",
+              "name": "Reply accepted.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "reply"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6fb605d4-65cb-4705-8db3-86cb38380c4a",
+          "name": "Submit a new advertisement/listing.",
+          "request": {
+            "name": "Submit a new advertisement/listing.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "postAds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "48a4ae99-4655-4c4c-9a4d-03d53dc44d97",
+              "name": "Ad posted.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "postAds"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b8d65f3c-c634-4145-a70d-2f2db5cdf5b0",
+          "name": "Modify an existing advertisement/listing.",
+          "request": {
+            "name": "Modify an existing advertisement/listing.",
+            "description": {},
+            "url": {
+              "path": [
+                "public",
+                "editAds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "975b7dcd-4e7a-470b-b5a3-b011111b9a62",
+              "name": "Ad updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "public",
+                    "editAds"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Quikr-Signature-v2",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.quikr.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Quikr-Signature-v2"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "cb3ec02c-50be-4540-89b8-b37156a36d3b",
+    "name": "Quikr Developer Platform (QDP) App Public API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Quikr Developer Platform (QDP) exposes India's Quikr online classifieds to approved partner apps: discover ads by location or category, surface trending and live activity, reply to listings, and post/edit ads. The platform is in beta with invitation-only access (request via dvlpr-support@quikr.com). Authentication uses custom Quikr HMAC-SHA1 signed headers, not OAuth.\n\nContact Support:\n Name: Quikr Developer Support\n Email: dvlpr-support@quikr.com",
+      "type": "text/plain"
+    }
+  }
+}
