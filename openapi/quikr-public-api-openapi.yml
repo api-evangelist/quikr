@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Quikr Developer Platform (QDP) App Public API
+  title: Quikr Developer Platform (QDP) Public API
   version: v1
   description: 'Quikr Developer Platform (QDP) exposes India''s Quikr online classifieds to approved partner apps: discover ads by location or category, surface trending and live activity, reply to listings, and post/edit ads. The platform is in beta with invitation-only access (request via dvlpr-support@quikr.com). Authentication uses custom Quikr HMAC-SHA1 signed headers, not OAuth.'
   contact:
@@ -19,7 +19,7 @@ paths:
   /public/adsByLocation:
     get:
       operationId: getAdsByLocation
-      summary: Retrieve ads by geographic coordinates.
+      summary: Retrieve ads by geographic coordinates
       responses:
         '200':
           description: Ads matching the supplied location.
@@ -28,7 +28,7 @@ paths:
   /public/adsByCategory:
     get:
       operationId: getAdsByCategory
-      summary: Fetch ads filtered by category and city.
+      summary: Fetch ads filtered by category and city
       responses:
         '200':
           description: Ads matching the supplied category and city.
@@ -37,7 +37,7 @@ paths:
   /public/trending:
     get:
       operationId: getTrending
-      summary: Display trending items in a city.
+      summary: Display trending items in a city
       responses:
         '200':
           description: Trending items.
@@ -46,7 +46,7 @@ paths:
   /public/liveOnQuikr:
     get:
       operationId: getLiveOnQuikr
-      summary: Retrieve live platform activity metrics.
+      summary: Retrieve live platform activity metrics
       responses:
         '200':
           description: Live activity metrics.
@@ -55,7 +55,7 @@ paths:
   /public/reply:
     post:
       operationId: replyToAd
-      summary: Enable buyer-to-seller communication on a listing.
+      summary: Enable buyer-to-seller communication on a listing
       responses:
         '200':
           description: Reply accepted.
@@ -64,7 +64,7 @@ paths:
   /public/postAds:
     post:
       operationId: postAd
-      summary: Submit a new advertisement/listing.
+      summary: Submit a new advertisement/listing
       responses:
         '200':
           description: Ad posted.
@@ -73,7 +73,7 @@ paths:
   /public/editAds:
     post:
       operationId: editAd
-      summary: Modify an existing advertisement/listing.
+      summary: Modify an existing advertisement/listing
       responses:
         '200':
           description: Ad updated.

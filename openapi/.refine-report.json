@@ -1,9 +1,7 @@
 {
   "provider": "quikr",
   "sources": [
-    "quikr-app-api-openapi.yml",
-    "quikr-platform-api-openapi.yml",
-    "quikr-public-api-openapi.yml"
+    "_original/quikr-openapi.yml"
   ],
   "outputs": [
     "quikr-app-api-openapi.yml",
@@ -13,6 +11,26 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "quikr-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "quikr-openapi.yml: tagged paths POST /app/auth/access_token -> App",
+    "quikr-openapi.yml: tagged paths GET /public/adsByLocation -> Public",
+    "quikr-openapi.yml: tagged paths GET /public/adsByCategory -> Public",
+    "quikr-openapi.yml: tagged paths GET /public/trending -> Public",
+    "quikr-openapi.yml: tagged paths GET /public/liveOnQuikr -> Public",
+    "quikr-openapi.yml: tagged paths POST /public/reply -> Public",
+    "quikr-openapi.yml: tagged paths POST /public/postAds -> Public",
+    "quikr-openapi.yml: tagged paths POST /public/editAds -> Public",
+    "quikr-openapi.yml: tagged paths POST /platform/v1/userAds -> Platform",
+    "quikr-openapi.yml: declared missing tag: App",
+    "quikr-openapi.yml: declared missing tag: Platform",
+    "quikr-openapi.yml: declared missing tag: Public",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "quikr-app-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "quikr-platform-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "quikr-public-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

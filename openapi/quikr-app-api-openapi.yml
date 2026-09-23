@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Quikr Developer Platform (QDP) App API
   version: v1
@@ -19,7 +19,7 @@ paths:
   /app/auth/access_token:
     post:
       operationId: createAccessToken
-      summary: Generate a daily access token (X-Quikr-Token-Id), valid for one day.
+      summary: Generate a daily access token (X-Quikr-Token-Id), valid for one day
       responses:
         '200':
           description: Access token issued.
