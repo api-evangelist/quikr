@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/quikr/integrations
+- https://n8n.io/integrations/quikr/
+- https://composio.dev/toolkits/quikr
+- https://monid.ai/tools/quikr
+checked:
+- https://composio.dev/toolkits/quikr
+- https://monid.ai/tools/quikr
+- https://n8n.io/integrations/quikr/
+- https://zapier.com/apps/quikr/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
