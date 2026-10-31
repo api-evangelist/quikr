@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Quikr is a company surfaced as a portfolio company of norwest-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.
+Quikr is India's leading online classifieds platform, describing itself as "India's no. 1 online classifieds platform" for buying, selling, and renting across vehicles, real estate, jobs, mobiles, electronics, furniture, and 300+ service categories, plus education, events, pets, and matrimonial listings. Quikr operates a portfolio of brands including CommonFloor, Hiree, IndiaProperty, and Zefo. The Quikr Developer Platform (QDP) exposes classifieds data and actions to approved partner apps through an invitation-only beta API at api.quikr.com, using custom HMAC-SHA1 signed request headers rather than OAuth. Quikr is backed by Norwest Venture Partners.
 
-Backed by: norwest-venture-partners — https://quikr.com
+**Areas:** Company · Classifieds · Marketplace · Real Estate · Automotive · Job · E-Commerce · India · Developer Platform
+
+## Quikr on APIs.io
+
+Everything profiled for Quikr is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/quikr/](https://apis.io/providers/quikr/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Quikr App API](https://apis.io/apis/quikr/quikr-app-api/) — The App API from Quikr — 1 operation(s) for app.
+- [Quikr Platform API](https://apis.io/apis/quikr/quikr-platform-api/) — The Platform API from Quikr — 1 operation(s) for platform.
+- [Quikr Public API](https://apis.io/apis/quikr/quikr-public-api/) — The Public API from Quikr — 7 operation(s) for public.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Quikr Developer Platform (QDP) App API](https://apis.io/collections/quikr/open-quikr-app-api/)
+- [Quikr Developer (QDP) App Platform API](https://apis.io/collections/quikr/open-quikr-platform-api/)
+- [Quikr Developer Platform (QDP) App Public API](https://apis.io/collections/quikr/open-quikr-public-api/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Quikr Authentication](https://apis.io/security/quikr/quikr-authentication/)
+- [Quikr Domain Security](https://apis.io/security/quikr/quikr-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://quikr.com)
+- [Documentation](https://developer.quikr.com/index.php/documentation)
+- [Blog](https://blog.quikr.com)
+
+## API Evangelist rating
+
+**Kin Score 25.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 45.3 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 15.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/quikr/](https://apis.io/providers/quikr/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Quikr: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/quikr/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
